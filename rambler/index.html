@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora&family=Poppins&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Rambler Hostel</title>
+</head>
+<body>
+    <!--NAV BAR -->
+    <nav>
+        <div class = "logo">
+            <img src = "images/logo.png">
+            <h4>Rambler Hostel</h4>
+        </div>
+        <ul class = "nav_links">
+            <li>
+                <a href = "#about">About</a>
+            </li>
+            <li>
+                <a href = "#rooms_page">Rooms</a>
+            </li>
+            <li>
+                <a href = "#facilities">Facilities</a>
+            </li>
+            <li>
+                <a href = "#contact">Contact</a>
+            </li>
+        </ul>
+
+        <div class = "burger">
+            <div class = "burger_line"></div>
+            <div class = "burger_line"></div>
+            <div class = "burger_line"></div>
+        </div>
+    </nav>
+
+    <!--ABOUT-->
+    <div class = "large_object" id = "about">
+
+        <div class = "about_left">
+            <div id = "about_txt">
+                <h1> Rambler <br> Hostel</h1>
+                <p> Situated in the heart of Thamel, Rambler Hostel </p>
+            </div>
+        </div>
+
+        <div class = "about_pics">
+            <div class="carousel-container">
+                <div class="mySlides animate">
+                  <img src="/images/hostel1.PNG"/>
+                 
+                </div>
+              
+                <div class="mySlides animate">
+                  <img src="/images/hostel2.jpg" />
+            
+                </div>
+              
+                <div class="mySlides animate">
+                  <img src="/images/hostel3.png"/>
+              
+                </div>
+              
+                <div class="mySlides animate">
+                  <img src="/images/hostel4.jpg"/>
+                 
+              
+                </div>  
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="prevSlide()">&#10094;</a>
+                <a class="next" onclick="nextSlide()">&#10095;</a>
+              
+                <!-- The dots/circles -->
+                <div class="dots-container">
+                  <span class="dots" onclick="currentSlide(1)"></span>
+                  <span class="dots" onclick="currentSlide(2)"></span>
+                  <span class="dots" onclick="currentSlide(3)"></span>
+                  <span class="dots" onclick="currentSlide(4)"></span>
+                 
+                </div>
+            </div>
+            <!--carousel container end-->
+
+        </div>
+        <!--about_pic end-->
+
+    </div>
+
+    <!--ROOMS-->
+    <div class = "large_object" id = "rooms_page">
+        <!--TITLE-->
+            <h1> Our Rooms </h1>
+            <!--ROOMS GRID-->
+            <div class = "rooms_grid">
+                <div class = "room">
+                    <img src = "images/mixeddorm.jpg">
+                    <div class = "roomhead">
+                        <h2> Mixed Dorm </h2>
+                        <h3>$4 per night per bed </h3>
+                    </div>
+    
+                    <div class = "roominfo">
+                        <ul>
+                            <li>Free Breakfast</li>
+                            <li>Free Internet (Fast)</li>
+                            <li>Charging Point</li>
+                            <li>Locker</li>
+                            <li>Reading Light</li>
+                            <li>Towels</li>
+                            <li>Communal Bathroom</li>
+                            <li>Communal Shower</li>
+                        </ul>
+                    </div>
+    
+                    <button onclick = "window.location.href = 'https://form.jotform.com/221733769152459'">Book now</button>
+                </div>
+                <div class = "room">
+                    <img src = "images/femaleonly.jpg">
+                    <div class = "roomhead">
+                        <h2> Female Only Dorm </h2>
+                        <h3> $4 per night per bed </h3>
+                    </div>
+    
+                    <div class = "roominfo">
+                        <ul>
+                            <li>Free Breakfast</li>
+                            <li>Free Internet (Fast)</li>
+                            <li>Charging Point</li>
+                            <li>Locker</li>
+                            <li>Reading Light</li>
+                            <li>Towels</li>
+                            <li>Communal Bathroom</li>
+                            <li>Communal Shower</li>
+                        </ul>
+                    </div>
+                
+                    <button onclick = "window.location.href = 'https://form.jotform.com/221733769152459'">Book now</button>
+                </div>
+                <div class = "room">
+                    <img src = "images/onebed.PNG">
+                    <div class = "roomhead">
+                        <h2>One Bed Private Room</h2>
+                        <h3>$12 per night per room </h3>
+                    </div>
+    
+                    <div class = "roominfo">
+                        <ul>
+                            <li>One King Size Bed </li>
+                            <li>Free Breakfast</li>
+                            <li>Free Internet (Fast)</li>
+                            <li>Balcony with a View</li>
+                            <li>Charging Point</li>
+                            <li>Closet</li>
+                            <li>Shelves</li>
+                            <li>Private Bathroom</li>
+                        </ul>
+                    </div>
+    
+                    <button onclick = "window.location.href = 'https://form.jotform.com/221733769152459'">Book now</button>
+                </div>
+                <div class = "room">
+                    <img src = "images/threebed.jpg">
+                    <div class = "roomhead">
+                        <h2> Triple Bed Private Room </h2>
+                        <h3>$12 per night per room </h3>
+                    </div>
+    
+                    <div class = "roominfo">
+                        <ul>
+                            <li>Three Single Beds</li>
+                            <li>Free Breakfast</li>
+                            <li>Free Internet (Fast)</li>
+                            <li>Sofa</li>
+                            <li>Charging Point</li>
+                            <li>Closet</li>
+                            <li>Shelves</li>
+                            <li>Private Bathroom</li>
+                        </ul>
+                    </div>
+    
+                    <button onclick = "window.location.href = 'https://form.jotform.com/221733769152459'">Book now</button>
+                </div>
+            </div>
+            <!--ROOMS GRID END-->
+        </div>
+        <!--ROOMS PAGE END-->
+
+    <!--FACILITIES-->
+    <div class = "large_object" id = "facilities">
+  
+            <h1>Facilities</h1>
+            <div class = "fcts_lists">
+                <ul>
+                    <li>&#10004; Internet Connection</li>
+                    <li>&#10004; Breakfast</li>
+                    <li>&#10004; Rooftop</li>
+                    <li>&#10004; Reading Light</li>
+                </ul>
+                <ul>
+                    <li>&#10004; Towels</li>
+                    <li>&#10004; Fan</li>
+                    <li>&#10004; Lockers</li>
+                    <li>&#10004; Laundry Service</li>
+                </ul>
+            </div>
+
+    </div>
+
+    <!------CONTACT------>
+
+    <div class = "large_object" id = "contact">
+        <h1> Contact</h1>
+        <ul>
+            <li>&#9743; Phone: +977 986 1355699</li>
+            <li>&#9993; Email: hostelinnepal@gmail.com</li>
+            <li>&#9751; Address: Rambler Hostel, Paknajol Marg 43, Kathmandu 44600</li>
+        </ul>
+    </div>
+    <script src="app.js"></script>
+
+    <!---------FOOTER------------->
+    <footer>
+        <p>Rambler Hostel Webpage</p>
+        <p>&#169;2022 R.Hwang</p>
+    </footer>
+</body>
+</html>
